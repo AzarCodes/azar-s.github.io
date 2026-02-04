@@ -1,0 +1,329 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Azar S | DevOps Engineer</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&family=Fira+Code:wght@400;500&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <nav class="navbar">
+        <div class="container">
+            <a href="#" class="logo">&lt;Azar.S /&gt;</a>
+            <div class="menu-toggle" id="mobile-menu">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+            <ul class="nav-menu">
+                <li><a href="#about" class="nav-link">About</a></li>
+                <li><a href="#experience" class="nav-link">Experience</a></li>
+                <li><a href="#projects" class="nav-link">Case Studies</a></li>
+                <li><a href="#skills" class="nav-link">Arsenal</a></li>
+                <li><a href="mailto:azar.sameeulla@outlook.com" class="btn-cta">Request Consultation</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <section class="hero">
+        <div class="hero-content">
+            <span class="tag">System Reliability & Automation</span>
+            <h1 class="hero-title">I build scalable, reliable cloud infrastructure for high-growth teams.</h1>
+            <p class="hero-description">
+                Specializing in self-healing AWS architectures, zero-downtime deployments, and hardening security postures with Nginx & DevSecOps.
+            </p>
+            <div class="hero-buttons">
+                <a href="#projects" class="btn-primary">View Case Studies</a>
+                <a href="https://www.linkedin.com/in/azar-s-397111302/" target="_blank" class="btn-secondary"><i class="fab fa-linkedin"></i> LinkedIn</a>
+                <a href="https://github.com/AzarCodes" target="_blank" class="btn-secondary"><i class="fab fa-github"></i> GitHub</a>
+            </div>
+        </div>
+        
+        <div class="hero-visual">
+            <div class="code-block">
+                <div class="window-header">
+                    <div class="dot red"></div>
+                    <div class="dot yellow"></div>
+                    <div class="dot green"></div>
+                </div>
+                <pre><code>
+<span class="keyword">module</span> "production_infra" {
+  <span class="attr">source</span> = "./modules/eks-cluster"
+  
+  <span class="comment"># Zero-downtime configuration</span>
+  <span class="attr">node_groups</span> = {
+    app_nodes = {
+      <span class="attr">instance_types</span> = ["t3.medium"]
+      <span class="attr">scaling_config</span> = {
+        <span class="attr">min_size</span> = 3
+        <span class="attr">max_size</span> = 10
+      }
+    }
+  }
+}
+                </code></pre>
+            </div>
+            <div class="blur-circle"></div>
+        </div>
+    </section>
+
+    <div class="stats-strip">
+        <div class="container">
+            <div class="stat-item">
+                <div class="icon-box"><i class="fas fa-server"></i></div>
+                <div class="stat-text">
+                    <h3>50+ Servers Managed</h3>
+                    <span>Across Dev/Stage/Prod</span>
+                </div>
+            </div>
+            <div class="stat-divider"></div>
+            <div class="stat-item">
+                <div class="icon-box"><i class="fas fa-chart-line"></i></div>
+                <div class="stat-text">
+                    <h3>~30% Cost Reduction</h3>
+                    <span>Via Serverless Automation</span>
+                </div>
+            </div>
+            <div class="stat-divider"></div>
+            <div class="stat-item">
+                <div class="icon-box"><i class="fas fa-clock"></i></div>
+                <div class="stat-text">
+                    <h3>99.99% Uptime</h3>
+                    <span>Self-Healing Architecture</span>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <section id="about" class="section">
+        <div class="container scroll-reveal">
+            <h2 class="section-title">About Me</h2>
+            <div class="about-grid">
+                <div class="about-text">
+                    <p class="lead">I don't just "manage servers"—I build systems that manage themselves.</p>
+                    <p>
+                        With 3+ years of experience, I bridge the gap between development and operations. My focus is on eliminating manual toil and ensuring platform stability.
+                    </p>
+                    
+                    <ul class="impact-list">
+                        <li><i class="fas fa-check-circle"></i> <span><strong>Uptime:</strong> Ensuring 99.99% availability via auto-scaling & self-healing.</span></li>
+                        <li><i class="fas fa-rocket"></i> <span><strong>Velocity:</strong> Reduced release times by 35% with optimized GitHub Actions.</span></li>
+                        <li><i class="fas fa-shield-alt"></i> <span><strong>Security:</strong> Hardened entry points with Nginx, WAF, and Trivy scans.</span></li>
+                    </ul>
+
+                    <div class="looking-for-box">
+                        <strong><i class="fas fa-search"></i> What I'm looking for:</strong>
+                        <p>Open to DevOps / SRE roles focused on AWS, Kubernetes, and platform automation where I can own infrastructure reliability.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="experience" class="section bg-darker">
+        <div class="container scroll-reveal">
+            <h2 class="section-title">Experience</h2>
+            <div class="timeline">
+                <div class="timeline-item">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-content">
+                        <span class="date">Apr 2024 - Present</span>
+                        <h3>DevOps Engineer</h3>
+                        <h4>SPM Global Technologies (Client: DealDox)</h4>
+                        <p class="role-summary"><em>Designed enterprise-grade reverse proxy architecture handling secure multi-origin traffic.</em></p>
+                        <ul>
+                            <li>Managed 50+ EC2 instances across <strong>dev, staging, and prod</strong> environments with automated IAM policies.</li>
+                            <li>Engineered Nginx Reverse Proxy with regex-based CORS maps to block unauthorized origins.</li>
+                            <li>Integrated SonarQube & Trivy into CI/CD, blocking critical vulnerabilities pre-deployment.</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="timeline-item">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-content">
+                        <span class="date">Jan 2024 - Mar 2024</span>
+                        <h3>DevOps Engineer</h3>
+                        <h4>Simtekway Solutions</h4>
+                        <p class="role-summary"><em>Accelerated deployment cycles and reduced operational overhead.</em></p>
+                        <ul>
+                            <li>Reduced release time by 35% by migrating manual builds to GitHub Actions pipelines.</li>
+                            <li>Built Python (Boto3) scripts to auto-remediate failed health checks on AWS.</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="timeline-item">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-content">
+                        <span class="date">Mar 2022 - Dec 2023</span>
+                        <h3>Associate DevOps Engineer</h3>
+                        <h4>Corefront Technologies</h4>
+                        <p class="role-summary"><em>Automated manual operations to cut costs and improve consistency.</em></p>
+                        <ul>
+                            <li>Reduced manual ops toil by 50% using Bash and Python automation.</li>
+                            <li>Implemented AWS CloudWatch dashboards for real-time application observability.</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="projects" class="section bg-projects">
+        <div class="container scroll-reveal">
+            <h2 class="section-title">Case Studies</h2>
+            <div class="projects-grid">
+                <div class="project-card">
+                    <div class="card-header">
+                        <i class="fas fa-network-wired"></i>
+                        <h3>Enterprise Nginx Proxy</h3>
+                    </div>
+                    <div class="card-body">
+                        <p><strong>Problem:</strong> Backend exposed to CORS attacks and performance hits from preflight requests.</p>
+                        <p><strong>Action:</strong> Implemented Nginx with dynamic regex origin mapping and offloaded SSL/OPTIONS handling.</p>
+                        <p class="outcome"><strong>Outcome:</strong> Secured API access and reduced backend load by handling preflight traffic at the edge.</p>
+                    </div>
+                    <div class="tags">
+                        <span>Nginx</span><span>SSL</span><span>Security</span>
+                    </div>
+                    <a href="https://github.com/AzarCodes/portfolio" target="_blank" class="link-arrow">View Config <i class="fas fa-external-link-alt"></i></a>
+                </div>
+
+                <div class="project-card">
+                    <div class="card-header">
+                        <i class="fas fa-robot"></i>
+                        <h3>Serverless Cost Optimization</h3>
+                    </div>
+                    <div class="card-body">
+                        <p><strong>Problem:</strong> Dev environments running 24/7 wasted ~30% of the monthly cloud budget.</p>
+                        <p><strong>Action:</strong> Built EventBridge triggers for Lambda (Boto3) to auto-stop/start instances based on work hours.</p>
+                        <p class="outcome"><strong>Outcome:</strong> Achieved approx 30% reduction in EC2 bills instantly.</p>
+                    </div>
+                    <div class="tags">
+                        <span>Lambda</span><span>Python</span><span>CostOps</span>
+                    </div>
+                    <a href="https://github.com/AzarCodes" target="_blank" class="link-arrow">View Script <i class="fas fa-external-link-alt"></i></a>
+                </div>
+
+                <div class="project-card">
+                    <div class="card-header">
+                        <i class="fas fa-sync-alt"></i>
+                        <h3>Zero-Downtime EKS Migration</h3>
+                    </div>
+                    <div class="card-body">
+                        <p><strong>Problem:</strong> Legacy deployments caused 20-minute downtimes during updates.</p>
+                        <p><strong>Action:</strong> Dockerized apps and deployed to EKS with Helm charts and Rolling Update strategies.</p>
+                        <p class="outcome"><strong>Outcome:</strong> Achieved 99.99% uptime and zero failed deployments in 6 months.</p>
+                    </div>
+                    <div class="tags">
+                        <span>EKS</span><span>Docker</span><span>Helm</span>
+                    </div>
+                    <a href="https://github.com/AzarCodes" target="_blank" class="link-arrow">View Charts <i class="fas fa-external-link-alt"></i></a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="skills" class="section bg-darker">
+        <div class="container scroll-reveal">
+            <h2 class="section-title">Technical Arsenal</h2>
+            <div class="skills-grid">
+                <div class="skill-group">
+                    <h3><i class="fab fa-aws"></i> Cloud & Infrastructure</h3>
+                    <div class="skill-list">
+                        <div class="skill-pill">
+                            <strong>AWS (EC2, S3, RDS)</strong>
+                            <span>Daily driver for production workloads</span>
+                        </div>
+                        <div class="skill-pill">
+                            <strong>Terraform</strong>
+                            <span>IaC for stateful resource management</span>
+                        </div>
+                        <div class="skill-pill">
+                            <strong>Ansible</strong>
+                            <span>Configuration management</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="skill-group">
+                    <h3><i class="fas fa-cubes"></i> Containers & Orchestration</h3>
+                    <div class="skill-list">
+                        <div class="skill-pill">
+                            <strong>Kubernetes (EKS)</strong>
+                            <span>Cluster management & scaling</span>
+                        </div>
+                        <div class="skill-pill">
+                            <strong>Docker</strong>
+                            <span>Multi-stage image optimization</span>
+                        </div>
+                        <div class="skill-pill">
+                            <strong>Helm</strong>
+                            <span>Package management for K8s</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="skill-group">
+                    <h3><i class="fas fa-code-branch"></i> CI/CD & Automation</h3>
+                    <div class="skill-list">
+                        <div class="skill-pill">
+                            <strong>GitHub Actions</strong>
+                            <span>Pipeline automation & testing</span>
+                        </div>
+                        <div class="skill-pill">
+                            <strong>Python (Boto3)</strong>
+                            <span>Custom AWS automation scripts</span>
+                        </div>
+                        <div class="skill-pill">
+                            <strong>Strapi CMS</strong>
+                            <span>Headless CMS management</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="skill-group">
+                    <h3><i class="fas fa-shield-alt"></i> Monitoring & Security</h3>
+                    <div class="skill-list">
+                        <div class="skill-pill">
+                            <strong>Prometheus / Grafana</strong>
+                            <span>Dashboards for API latency & error rates</span>
+                        </div>
+                        <div class="skill-pill">
+                            <strong>Nginx</strong>
+                            <span>Reverse Proxy & Load Balancing</span>
+                        </div>
+                        <div class="skill-pill">
+                            <strong>Trivy / SonarQube</strong>
+                            <span>Vulnerability Scanning</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer id="contact">
+        <div class="container">
+            <h2 class="footer-title">Let's Build Something Scalable.</h2>
+            <div class="contact-info">
+                <p><i class="fas fa-map-marker-alt"></i> Bengaluru, Karnataka, India</p>
+                <p><i class="fas fa-envelope"></i> <a href="mailto:azar.sameeulla@outlook.com">azar.sameeulla@outlook.com</a></p>
+            </div>
+            
+            <div class="footer-buttons">
+                <a href="mailto:azar.sameeulla@outlook.com" class="btn-primary">Request a Consultation</a>
+                <a href="#" class="btn-secondary">Download Resume <i class="fas fa-download"></i></a>
+            </div>
+            
+            <div class="copyright">
+                <p>&copy; 2026 Azar S. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
